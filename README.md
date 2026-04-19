@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+📱 **Zap Consciente**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O Zap Consciente é uma aplicação web interativa e gamificada desenvolvida como parte da Atividade Extensionista IV do curso de Análise e Desenvolvimento de Sistemas. O projeto une a segurança digital (combate a golpes e fake news) com a conscientização sobre o consumo sustentável, alinhando-se à Meta 12.8 dos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.
 
-Currently, two official plugins are available:
+🎯 **Objetivo**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Capacitar o público, especialmente idosos, a identificar armadilhas digitais que incentivam o consumo desenfreado e o descarte precoce de eletrônicos, além de promover boas práticas de eficiência energética e redução de desperdício.
 
-## React Compiler
+✨ **Funcionalidades**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Mecânica de Swipe: Interface inspirada em aplicativos de mensagens e redes sociais, utilizando a biblioteca Framer Motion para uma interação lúdica (Arraste para a esquerda se for "Cilada", para a direita se for "Sustentável").
 
-## Expanding the ESLint configuration
+Dilemas Aleatórios: A cada partida, o sistema seleciona 4 cards aleatórios de um banco de dados, garantindo variabilidade.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Feedback Educativo: Após cada decisão, o usuário recebe uma explicação detalhada baseada nos indicadores da ODS 12 (gestão de e-waste, eficiência energética e desperdício de alimentos).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Design Responsivo (Mobile-First): Interface otimizada para dispositivos móveis, simulando o ambiente de um aplicativo de mensagens real.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🚀 **Tecnologias Utilizadas**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React 19
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+TypeScript (Tipagem estrita para maior robustez)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tailwind CSS v4 (Estilização moderna e eficiente)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Framer Motion (Animações fluidas e gestos de swipe)
+
+Vite (Build tool rápida e leve)
+
+Lucide React (Ícones)
+
+🛠️ **Como rodar o projeto**
+
+Clone este repositório:
+
+
+git clone https://github.com/Wlackless/zap-consciente.git
+Entre na pasta do projeto:
+
+
+cd zap-consciente
+Instale as dependências:
+
+
+npm install
+Inicie o servidor de desenvolvimento:
+
+npm run dev
+
+🌍 **Impacto Social (ODS 12)**
+Este projeto contribui diretamente para a meta de assegurar padrões de produção e consumo sustentáveis, focando em:
+
+Meta 12.2: Uso eficiente de recursos naturais (energia e hardware).
+
+Meta 12.3: Redução do desperdício de alimentos (reaproveitamento integral).
+
+Meta 12.8: Educação para o desenvolvimento sustentável e estilos de vida em harmonia com a natureza.
+
+📄 Licença
+Este projeto é um software de código aberto (Open Source) sob a licença MIT. Sinta-se à vontade para utilizar, replicar e adaptar para outras comunidades.
+
+Desenvolvido por Thiago Santos como atividade extensionista acadêmica. 
